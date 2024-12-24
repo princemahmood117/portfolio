@@ -1,58 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/Hero.png" type="image/x-icon">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/Hero.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
     <title>Portfolio | Iftekhar Mahmood</title>
-</head>
-<body class="overflow-x-hidden">
+  </head>
+
+
+  <body class="overflow-x-hidden">
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
-        <img class="w-full" src="./images/header-bg-color.png" alt="">
+      <img class="w-full" src="./images/header-bg-color.png" alt="" />
     </div>
 
-    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between">
-        <img class="w-28 cursor-pointer mr-14" src="./images//logo.png" alt="">
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between"
+    >
+      <img class="w-32 cursor-pointer mr-14" src="./images/index.png" alt="" />
 
-        <ul class="md:flex hidden items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
-            <li> <a href="#top">Home</a> </li>
-            <li> <a href="#about">About me</a> </li>
-            <li> <a href="#services">Services</a> </li>
-            <li> <a href="#work">My works</a> </li>
-            <li> <a href="#contact">Contact me</a> </li>
-        </ul>
+      <ul
+        class="md:flex hidden items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50"
+      >
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">My works</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
 
-       <div class="flex items-center gap-4">
-        <button> <img class="w-6" src="./images/moon_icon.png" alt=""> </button>
+      <div class="flex items-center gap-4">
+        <button><img class="w-6" src="./images/moon_icon.png" alt="" /></button>
 
-        <a class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"  href="#contact">
-            Contact  <img class="w-3" src="./images/arrow-icon.png" alt="">
+        <a
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+          href="#contact"
+        >
+          Contact <img class="w-3" src="./images/arrow-icon.png" alt="" />
         </a>
 
         <!-- menu icon -->
         <button onclick="openMenu()" class="block md:hidden ml-3">
-            <img class="w-6" src="./images/menu-black.png" alt="">
+          <img class="w-6" src="./images/menu-black.png" alt="" />
         </button>
-       </div>
+      </div>
 
-       <!-- for mobile view -->
-       <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-slate-300 transition duration-500 gap-5">
-
+      <!-- for mobile view -->
+      <ul
+        id="sideMenu"
+        class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-slate-300 transition duration-500 gap-5"
+      >
         <div onclick="closeMenu()" class="absolute right-8 top-6">
-            <img class="w-5 cursor-pointer" src="./images/close-black.png" alt="">
+          <img
+            class="w-5 cursor-pointer"
+            src="./images/close-black.png"
+            alt=""
+          />
         </div>
 
-        <li> <a href="#top">Home</a> </li>
-        <li> <a href="#about">About me</a> </li>
-        <li> <a href="#services">Services</a> </li>
-        <li> <a href="#work">My works</a> </li>
-        <li> <a href="#contact">Contact me</a> </li>
-       </ul>
+        <li><a href="#top" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About me</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#work" onclick="closeMenu()">My works</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+      </ul>
     </nav>
-    
+
+    <!-- Header section -->
+
+    <div
+      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+    >
+      <img class="rounded-full w-36" src="./images/photo.jpg" alt="" />
+      <h2 class="flex items-end gap-2 text-xl md:text-3xl mb-3">
+        I'm Iftekhar Mahmood
+        <img class="w-6" src="./images/hand-icon.png" alt="" />
+      </h2>
+      <h2 class="text-3xl sm:text-5xl lg:text-[50px]">
+        Junior front end developer based on MERN
+      </h2>
+      <hr />
+
+      <div class="flex gap-3 mt-4 flex-col sm:flex-row items-center">
+        <a
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:scale-110 md:hover:scale-105 transition-all duration-300"
+          href="#contact"
+          >Contact me
+          <img class="w-4" src="./images/right-arrow-white.png" alt="" />
+        </a>
+
+        <a
+          class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 hover:scale-110 md:hover:scale-105 transition-all duration-300"
+          href="./images/prince resume.pdf" download
+          >Download Resume
+          <img class="w-4" src="./images/download-icon.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- about me section  -->
+    <div id="about" class="w-full px-[12%] py-6 scroll-mt-12">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center text-4xl ">About me</h2>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-16 my-16">
+            <div class="max-w-max mx-auto relative">
+                <img src="./images/about.jpg" class="w-64 sm:w-80 rounded-3xl max-w-none" alt="">
+
+                <div class="bg-white w-1/2 aspect-square absolute -right-4 bottom-0 rounded-full trans1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+                    <img src="./images/circular-text.png" class="w-full" alt="">
+                    <img src="./images/dev-icon.png" class="w-1/4 absolute -translate-x-1/2 -translate-y-1/2 animate-bounce " alt="">
+                </div>
+            </div>
+
+
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl text-[15px] md:text-xl">I am a junior front end developer. I am doing projects based on MERN and I have done several projects which are responsive and followed the development principle. I am looking for an opportunity to join team and collaborate with them to do teamwork on any MERN project </p>
+
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-2 ">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-gray-100 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_gray]">
+
+                        <img src="./images/code-icon.png" class="w-7" alt="">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript</p>
+
+                        <h3 class="my-4 font-semibold text-gray-700">Others</h3>
+                        <p class="text-gray-600 text-sm">Tailwind CSS |  React | Node | Mongodb | Firebase</p>
+                    </li>
+
+                    <!-- education -->
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-3 cursor-pointer hover:bg-gray-100 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_gray]">
+
+                        <img src="./images/edu-icon.png" class="w-7" alt="">
+
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <h3 class="my-2 font-semibold text-gray-700">Bsc (CSE)</h3>
+                        <p class="text-gray-600 text-sm">National University</p>
+                        <p class="text-gray-600 text-sm">GPA : Upcoming</p>
+
+                        <h3 class="my-2 font-semibold text-gray-700">HSC (Science)</h3>
+                        <p class="text-gray-600 text-sm">Birshreshtha Munshi Abdur Rouf Public College</p>
+                        <p class="text-gray-600 text-sm">GPA : 4.25</p>
+
+                    </li>
+
+                    <!-- projects -->
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-4 cursor-pointer hover:bg-gray-100 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_gray]">
+
+                        <img src="./images/code-icon.png" class="w-7" alt="">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript</p>
+
+                        <h3 class="my-4 font-semibold text-gray-700">Others</h3>
+                        <p class="text-gray-600 text-sm">Tailwind CSS |  React | Node | Mongodb | Firebase</p>
+                    </li>
+                </ul>
+
+                <h4 class="my-6 text-gray-700">Tools I use</h4>
+
+                <ul class="flex gap-3">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-300">
+                        <img src="./images/vscode.png" class="w-5 sm:w-7" alt="">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-300">
+                        <img src="./images/git.png" class="w-5 sm:w-7" alt="">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-300">
+                        <img src="./images/firebase.png" class="w-5 sm:w-7" alt="">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-300">
+                        <img src="./images/figma.png" class="w-5 sm:w-7" alt="">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-300">
+                        <img src="./images/mongodb.png" class="w-5 sm:w-7" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
