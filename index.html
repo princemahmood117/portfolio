@@ -8,7 +8,7 @@
     <script src="./tailwind.config.js"></script>
     <title>Portfolio | Iftekhar Mahmood</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <img class="w-full" src="./images/header-bg-color.png" alt="">
@@ -32,19 +32,18 @@
             Contact  <img class="w-3" src="./images/arrow-icon.png" alt="">
         </a>
 
-        <button class="block md:hidden ml-3">
+        <!-- menu icon -->
+        <button onclick="openMenu()" class="block md:hidden ml-3">
             <img class="w-6" src="./images/menu-black.png" alt="">
         </button>
        </div>
 
        <!-- for mobile view -->
-       <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen bg-slate-300 transition duration-500 gap-5">
+       <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-slate-300 transition duration-500 gap-5">
 
-
-        <div class="absolute right-8 top-6">
+        <div onclick="closeMenu()" class="absolute right-8 top-6">
             <img class="w-5 cursor-pointer" src="./images/close-black.png" alt="">
         </div>
-
 
         <li> <a href="#top">Home</a> </li>
         <li> <a href="#about">About me</a> </li>
@@ -54,5 +53,6 @@
        </ul>
     </nav>
     
+    <script src="./script.js"></script>
 </body>
 </html>
