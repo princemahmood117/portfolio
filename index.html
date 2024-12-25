@@ -85,14 +85,14 @@
 
       <div class="flex gap-3 mt-4 flex-col sm:flex-row items-center">
         <a
-          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:scale-110 md:hover:scale-105 transition-all duration-300"
-          href="#contact"
-          >Contact me
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:scale-110 md:hover:scale-105 transition-all duration-300 hover: hover:from-blue-700 hover:to-purple-400"
+          href="#contact" 
+          >Contact me 
           <img class="w-4" src="./images/right-arrow-white.png" alt="" />
         </a>
 
         <a
-          class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 hover:scale-110 md:hover:scale-105 transition-all duration-300"
+          class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2 hover:scale-110 md:hover:scale-105 transition-all duration-300 hover:bg-slate-300"
           href="./images/prince resume.pdf" download
           >Download Resume
           <img class="w-4" src="./images/download-icon.png" alt="" />
@@ -178,6 +178,94 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <!-- service part -->
+
+    <div id="services" class="w-full px-[12%] py-6 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">What I do</h4>
+        <h2 class="text-center text-4xl ">Services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 text-xl">I am a front end developer from Bangladesh. I have experience in HTML, CSS, JavaScript, and necessary framewrok like,react.Currently working with NextJs.</p>
+
+        <div class="flex gap-3 my-10">
+
+            <div class="border border-gray-400 rounded-lg px-3 py-10 hover:shadow-[4px_4px_0_#999] cursor-pointer hover:bg-gray-100 hover:-translate-y-1 duration-500 w-1/2">
+              <img class="w-10" src="./images/web-icon.png" alt="">
+              <h3 class="text-xl my-4 text-gray-800">Web develoment</h3>
+              <p class="text-xl text-gray-600 leading-5">Web development is the process of building and maintaining websites, focusing on design (front-end) and functionality (back-end) to create dynamic online experiences.</p>
+              <a class="flex items-center gap-2 text-sm mt-5" href="https://www.w3schools.com/whatis" target="_blank">Read more <img class="w-5" src="./images/right-arrow.png" alt=""> </a>
+            </div>
+
+
+           <div class="w-1/2">
+            <img class="md:w-full h-full rounded"  src="./images/coding.jpg" alt="">
+           </div>
+
+            
+
+        </div>
+    </div>
+
+    <!-- My works section -->
+
+    <div id="work" class="w-full px-[12%] py-6 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg">My Projects</h4>
+        <h2 class="text-center text-4xl ">My recent works</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 text-xl">Welcome to my web develoment portfolio! Explore my collection of recent projects showcasing my expertise in front end development</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 my-10 gap-3">
+
+          <!-- card-1 -->
+          <div class="aspect-square bg-[url('./images/work01.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+              <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                <div>
+                  <h2 class="font-semibold">Project 1 </h2>
+                  <p class="text-sm text-gray-700">Web development</p>
+                </div>
+
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-green-300 transition">
+                  <img src="./images/send-icon.png" class="w-5" alt="">
+                </div>
+              </div>
+
+          </div>
+
+          <!-- card-2 -->
+          <div class="aspect-square bg-[url('./images/work02.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+              <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                <div>
+                  <h2 class="font-semibold">Project 2 </h2>
+                  <p class="text-sm text-gray-700">Web development</p>
+                </div>
+
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-green-300 transition">
+                  <img src="./images/send-icon.png" class="w-5" alt="">
+                </div>
+              </div>
+
+          </div>
+
+          <!-- card-2 -->
+          <div class="aspect-square bg-[url('./images/work03.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+              <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+
+                <div>
+                  <h2 class="font-semibold">Project 3 </h2>
+                  <p class="text-sm text-gray-700">Web development</p>
+                </div>
+
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-green-300 transition">
+                  <img src="./images/send-icon.png" class="w-5" alt="">
+                </div>
+              </div>
+
+          </div>
         </div>
     </div>
 
